@@ -14,13 +14,12 @@ const HeroCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 3000); // Auto-slide every 3 seconds
-
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-full h-[500px]">
+    <div className="relative w-[70%] h-[500px] mt-6 bg-slate-200 rounded-xl mx-auto">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -32,12 +31,12 @@ const HeroCarousel = () => {
           <img
             src={slide}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-fill"
+            className="w-full rounded-xl h-full object-cover"
           />
         </div>
       ))}
 
-      {/* Buttons */}
+      {/* Navigation Buttons */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3">
         {slides.map((_, index) => (
           <button
