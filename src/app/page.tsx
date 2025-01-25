@@ -11,6 +11,7 @@ export default function HomePage() {
           Welcome to Martins FC!
         </h1>
       </section>
+      
     </main>
   );
 }

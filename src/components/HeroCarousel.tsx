@@ -32,7 +32,7 @@ const HeroCarousel = () => {
           <img
             src={slide}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-fill"
           />
         </div>
       ))}
