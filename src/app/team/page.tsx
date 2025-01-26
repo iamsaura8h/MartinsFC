@@ -5,11 +5,11 @@ const teamData = {
   goalkeepers: [
     {
       id: 1,
-      name: "John Doe",
-      jerseyNumber: 1,
-      position: "Goalkeeper",
+      name: "Martin Odegaard",
+      jerseyNumber: 10,
+      position: "Midfielder",
       batchYear: "2025",
-      photo: "/images/players/john_doe.jpg",
+      photo: "/images/players/odegard.jpeg",
     },
   ],
   defenders: [],
