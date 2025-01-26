@@ -3,17 +3,19 @@ import CategorySection from "@/components/CategorySection";
 
 const teamData = {
   goalkeepers: [
-    {
-      id: 1,
-      name: "Martin Odegaard",
-      jerseyNumber: 10,
-      position: "Midfielder",
-      batchYear: "2025",
-      photo: "/images/players/odegard.jpeg",
-    },
+    
   ],
   defenders: [],
-  midfielders: [],
+  midfielders: [
+    {
+    id: 1,
+    name: "Saurabh",
+    jerseyNumber: 10,
+    position: "Midfielder",
+    batchYear: "2025",
+    photo: "/images/players/odegard.jpeg",
+  },
+  ],
   forwards: [],
 };
 
@@ -21,7 +23,7 @@ export default function TeamPage() {
   return (
     <main>
       <Navbar />
-      <div className="container mx-auto mt-8">
+      <div className="container text-white p-6 ">
         <CategorySection title="Goalkeepers" players={teamData.goalkeepers} />
         <CategorySection title="Defenders" players={teamData.defenders} />
         <CategorySection title="Midfielders" players={teamData.midfielders} />
