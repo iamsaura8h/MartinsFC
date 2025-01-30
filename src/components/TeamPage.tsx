@@ -54,7 +54,7 @@ export default function TeamPage() {
   if (loading) return <p className="text-center text-white">Loading players...</p>;
 
   return (
-    <main className="container text-white p-6">
+    <main className="container text-white p-6 ">
       <Section title="Goalkeepers" players={goalkeepers} />
       <Section title="Defenders" players={defenders} />
       <Section title="Midfielders" players={midfielders} />
@@ -64,8 +64,8 @@ export default function TeamPage() {
 }
 
 const Section = ({ title, players }: { title: string; players: Player[] }) => (
-  <section className="mt-8">
-    <h2 className="text-4xl font-bold text-red-500 mb-4">{title}</h2>
+  <section className="mt-8 ">
+    <h2 className="text-4xl font-bold text-red-500 mb-8 mt-6">{title}</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
       {players.map(player => <PlayerCard key={player.id} player={player} />)}
     </div>
