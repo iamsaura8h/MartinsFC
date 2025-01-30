@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroCarousel from "@/components/HeroCarousel";
-import CategorySection from "@/components/CategorySection";
-import TeamPage from "@/components/Team";
+import TeamPage from "@/components/TeamPage";
 
 export default function HomePage() {
   return (
@@ -16,7 +15,7 @@ export default function HomePage() {
       {/* Embed the Team content below */}
       <section className="container mx-auto mt-12">
         <h2 className="text-4xl font-semibold text-center text-gray-700">
-          Meet Our Starting XI
+          Meet Our Squad
         </h2>
         <TeamPage /> {/* Render the team content */}
       </section>

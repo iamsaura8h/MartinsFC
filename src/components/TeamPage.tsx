@@ -1,5 +1,4 @@
-import Navbar from "@/components/Navbar";
-import CategorySection from "@/components/CategorySection";
+import PlayerCard from "@/components/PlayerCard";
 
 const teamData = {
   goalkeepers: [
@@ -148,15 +147,49 @@ const teamData = {
   ],
 };
 
-
 export default function TeamPage() {
   return (
     <main>
-      <div className="container text-white p-6 ">
-        <CategorySection title="Goalkeepers" players={teamData.goalkeepers} />
-        <CategorySection title="Defenders" players={teamData.defenders} />
-        <CategorySection title="Midfielders" players={teamData.midfielders} />
-        <CategorySection title="Forwards" players={teamData.forwards} />
+      <div className="container text-white p-6">
+        {/* Goalkeepers Section */}
+        <section className="mt-8">
+          <h2 className="text-4xl font-bold text-red-500 mb-4">Goalkeepers</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            {teamData.goalkeepers.map((player) => (
+              <PlayerCard key={player.id} player={player} />
+            ))}
+          </div>
+        </section>
+
+        {/* Defenders Section */}
+        <section className="mt-8">
+          <h2 className="text-4xl font-bold text-red-500 mb-4">Defenders</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            {teamData.defenders.map((player) => (
+              <PlayerCard key={player.id} player={player} />
+            ))}
+          </div>
+        </section>
+
+        {/* Midfielders Section */}
+        <section className="mt-8">
+          <h2 className="text-4xl font-bold text-red-500 mb-4">Midfielders</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            {teamData.midfielders.map((player) => (
+              <PlayerCard key={player.id} player={player} />
+            ))}
+          </div>
+        </section>
+
+        {/* Forwards Section */}
+        <section className="mt-8">
+          <h2 className="text-4xl font-bold text-red-500 mb-4">Forwards</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            {teamData.forwards.map((player) => (
+              <PlayerCard key={player.id} player={player} />
+            ))}
+          </div>
+        </section>
       </div>
     </main>
   );

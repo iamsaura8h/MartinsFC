@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="bg-black text-white py-4">
-      <div className="container mx-auto flex justify-between px-6 items-center">
+      <div className="container  flex justify-between px-6 items-center">
         {/* Logo */}
         <Link href="/">
           {/* <img src="/images/logo.png" alt="Martins FC Logo" className="h-12" /> */}
