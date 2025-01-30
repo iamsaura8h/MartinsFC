@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import CategorySection from "@/components/CategorySection";
 
 const teamData = {
   goalkeepers: [
