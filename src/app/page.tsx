@@ -13,7 +13,7 @@ export default function HomePage() {
         </h1>
       </section>
       {/* Embed the Team content below */}
-      <section className="container mx-auto mt-12">
+      <section className="container mx-auto mt-12" id="team">
         <h2 className="text-4xl font-semibold text-center text-gray-700">
           Meet Our Squad
         </h2>
