@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Martin's FC ⚫🔴⚪
 
-## Getting Started
+Welcome to **Martin's Football Club**, the official college football team of **St. Martin's Engineering College, Hyderabad**. This website showcases our squad, memorable moments, and trophies.
 
-First, run the development server:
+## 🚀 Tech Stack
+This project is built using:
+- **Next.js** - React framework for server-side rendering and static site generation.
+- **Prisma** - ORM for database interactions.
+- **Supabase** - PostgreSQL database hosting.
+- **Tailwind CSS** - Utility-first CSS framework for styling.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📂 Project Structure
+```
+├── components        # Reusable UI components
+│   ├── Navbar.tsx   # Navigation bar
+│   ├── TeamPage.tsx # Displays team players
+│   ├── PlayerCard.tsx # Individual player cards
+├── pages            # Application pages
+│   ├── index.tsx    # Home page
+│   ├── about.tsx    # About page
+│   ├── team.tsx     # Team section
+├── utils            # Utility functions
+│   ├── supabaseClient.ts # Supabase connection
+├── prisma           # Prisma schema and migrations
+│   ├── schema.prisma # Database schema
+│   ├── migrations    # Database migrations
+├── public           # Static assets (images, logos)
+├── styles           # Global styles
+└── .env             # Environment variables
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Setup Instructions
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-repo/martins-fc.git
+cd martins-fc
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2️⃣ Install Dependencies
+```sh
+yarn install  # or npm install
+```
 
-## Learn More
+### 3️⃣ Configure Environment Variables
+Create a `.env` file and add:
+```
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-key
+DATABASE_URL=your-prisma-database-url
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 4️⃣ Run the Development Server
+```sh
+yarn dev  # or npm run dev
+```
+The site will be available at **http://localhost:3000**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Database Setup with Prisma & Supabase
+### 1️⃣ Push Prisma Schema to Supabase
+```sh
+npx prisma db push
+```
 
-## Deploy on Vercel
+### 2️⃣ Generate Prisma Client
+```sh
+npx prisma generate
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3️⃣ Seed Initial Data (Players, Squad, etc.)
+```sh
+npx prisma db seed
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🏆 Features
+✅ **Dynamic Team Section** – Fetches players from Supabase dynamically.  
+✅ **Smooth Scrolling Navigation** – Clicking "Team" scrolls to the team section.  
+✅ **Fully Responsive Design** – Optimized for mobile and desktop views.  
+✅ **Scalable Backend** – Uses Supabase as the database.  
+
+---
+
+## 🔗 Contribution Guide
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch`
+3. Commit your changes: `git commit -m "Added new feature"`
+4. Push to your branch: `git push origin feature-branch`
+5. Open a Pull Request.
+
+---
+
+## 📞 Contact
+For any queries, feel free to reach out at **saurabhchaudhary.net@gmail.com**.
+
+⚽ Built with ❤️ by **Martin's FC Team**.
+
