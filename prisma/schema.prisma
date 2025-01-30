@@ -7,12 +7,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model Player {
-  id           Int    @id @default(autoincrement())
-  name         String
-  position     String
-  jerseyNumber Int
-  batchYear    String
-  photo        String
+  id            Int     @id @default(autoincrement())
+  name          String
+  position      String
+  jersey_number Int
+  batch_year    String
+  photo         String?
 }
