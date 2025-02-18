@@ -6,6 +6,8 @@ const slides = [
   "/images/carousel/slide1.jpg",
   "/images/carousel/slide2.jpg",
   "/images/carousel/slide3.jpg",
+  "/images/carousel/slide4.jpg",
+  "/images/carousel/slide5.jpg",
 ];
 
 const HeroCarousel = () => {
